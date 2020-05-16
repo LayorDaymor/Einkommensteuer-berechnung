@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1 class="text-center mt-4">Einkommensteuer-Berechnung</h1>
+            <form id="einkommen-rechmer">
+                <div id="one">
+                <label for="jahrtxt">Jahr</label>
+                <select name="jahr" id="jahr">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+                </div>
+                <div id="two">
+                    <label for="zvE" name="zvE">zvE</label>
+                    <input type="number"name="zvE" id="zvE1" ><p id="euro1">Euro</p>
+                    <input type="number"name="zvE" id="zvE2" ><p id="euro2">Euro</p>
+                </div>
+                <div id="three">
+                    <label for="einzel-zusammen">Für wie viele Personen</label>
+                    <input type="radio" id="einzel" checked name="einzel-zusammen" id="einzel"onclick="zusammenHiden()">
+                    <label for="einzel">Einzel</label><br>
+                    <input type="radio" id="zusammen" name="einzel-zusammen" id="zusammen" onclick="zusammenZeigen()">
+                    <label for="zusammen">Zwei</label><br>
+                </div>
+                <input type="submit" id="calculate" onclick="calculateZvE() "value="rechnen">
+            </form>
+            <h3 id="erginiss"></h3>
+        </div>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

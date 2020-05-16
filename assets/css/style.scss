@@ -1,0 +1,146 @@
+body{
+    background-color: white;
+}
+h1{
+    color: white;
+}
+
+#one{
+    background-color: #184da9;
+    margin-bottom: 0.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label[for=jahrtxt]{
+    grid-column: 1/2;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1vw;   
+}
+select{
+    background: #184da9;
+    color: white;
+    font-size: 30px;
+    border: none;
+    width: 100%;
+}   
+select:focus{
+    outline: none;
+}
+
+#two{
+    background-color: #184da9;
+    margin-bottom: 0.5vw;
+    display: grid;
+    grid-template-columns: 50% 1fr 4vw;
+    
+}
+label[name=zvE]{
+    grid-row: 1/5;
+    text-align: left;
+    grid-row: 1/5;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-left: 1vw;
+
+}
+input[id=zvE1]{
+    align-self: center ;
+    background:#17438e;
+    color: white;
+    margin-right:0.5vw;
+    font-size: 2vw;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+input[id=zvE2]{
+    display: none;
+    transition: 1s ease;
+    background:#17438e;
+    color: white;
+    margin-right:0.5vw;
+    font-size: 2vw;
+    border: none;
+    padding: 0;
+    width: 100%;
+    
+}
+#euro1,#euro2{
+color: white;
+text-align: center;
+margin-top: auto;
+}
+#euro2{
+    display: none;
+}
+
+#three{
+    background-color: #184da9;
+    margin-bottom: 0.5vw;
+    display: grid;
+    grid-template-columns: 50% 1.8vw 2vw 1.8vw 2vw;
+    grid-template-rows: 1fr 1fr;
+}
+label[for=einzel-zusammen]{
+    grid-row: 1/5;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    margin-left: 1vw;
+}
+
+input[id=einzel]{
+    grid-column: 2/3;
+    align-self: center ;
+    background:rgb(41, 41, 41);
+    color: white;
+    font-size: 2vw;
+    border: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    width: auto;
+}
+input[id=zusammen]{
+    grid-column: 2/3;
+    align-self: center ;
+    background:rgb(41, 41, 41);
+    color: white;
+    font-size: 2vw;
+    border: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    width: auto;
+}
+label[for=einzel]{
+    grid-column: 3/5;
+    color: white;
+    margin: 0;
+}
+label[for=zusammen]{
+    grid-column: 3/5;
+    color: white;
+
+    margin: 0;
+}
+#calculate{
+    border: none;
+    background-color: #184da9;
+    color: white;
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0;
+}
+h3{
+    margin-top: 0vw;
+    color: #1f1f1f;
+    text-align: left;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
